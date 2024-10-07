@@ -7,7 +7,7 @@ import { IoLogoJavascript } from 'react-icons/io';
 
 const projects = [
   {
-    src: "/ventisNova.PNG",
+    src: "/ventis.png",
     title: "VentisNova",
     description: "Página web desarrollada para la capacitación de mentorías y tutorías, creada con React, estilizada con Tailwind CSS y base de datos en Firebase.",
     technologies: [FaReact, RiTailwindCssFill, IoLogoFirebase],
@@ -20,10 +20,10 @@ const projects = [
     description: "Página desarrollada para la charla de mentorias y tutorias, creada con React, estilizada con Tailwind CSS y base de datos en Firebase",
     technologies: [FaReact, FaNodeJs],
     githubUrl: "https://github.com/BrianMarchese",
-    liveUrl: "https://github.com/BrianMarchese",
+    liveUrl: "https://github.com/BrianMarchese",l
   }, */
   {
-    src: "/landing.PNG",
+    src: "/landing-page.png",
     title: "Transporte Brian",
     description: "Landing page realizada para un transporte de paquetería, estilizada con Tailwind CSS e implementación de funcionalidad con JavaScript.",
     technologies: [FaHtml5,IoLogoJavascript, RiTailwindCssFill],
@@ -31,7 +31,7 @@ const projects = [
     liveUrl: "https://transporte-brian.vercel.app/",
   },
   {
-    src: "/la-barrica.png",
+    src: "/la-barricaa.png",
     title: "La barrica",
     description: "Sitio de venta de bebidas alcohólicas realizado en React, estilizado con Bootstrap y base de datos con stock controlado en Firebase.",
     technologies: [FaReact, FaBootstrap, IoLogoFirebase],
@@ -39,7 +39,7 @@ const projects = [
     liveUrl: "https://github.com/BrianMarchese/ProyectoFinal-Marchese/blob/master/NavegacionEntregaFinal.gif",
   },
   {
-    src: "/cheers.PNG",
+    src: "/cheerss.png",
     title: "Cheers",
     description: "Página de barras móviles de coctelería con la inclusión de venta de paquetes de contratación realizada con JavaScript, estilizada con Bootstrap y SASS.",
     technologies: [IoLogoJavascript, FaBootstrap, FaSass],
