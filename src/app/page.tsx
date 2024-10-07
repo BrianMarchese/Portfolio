@@ -1,101 +1,65 @@
 import Image from "next/image";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center md:my-0 my-10">
+      <div className="max-w-6xl w-full flex items-center justify-between space-x-8 px-6">
+        {/* Contenedor del texto */}
+        <div className="flex flex-col space-y-6 max-w-lg">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          {/* Título principal */}
+          <div className="text-5xl font-bold leading-tight">
+            <p className="text-3xl">Hola, soy</p>
+            Brian Uriel Marchese
+            <p className="text-3xl text-sky-500 mt-2">Desarrollador Front End</p>
+          </div>
+          <p className="text-xl">Actualmente me encuentro en la búsqueda de proyectos o empresas que me permitan volcar mis conocimientos, pero también adquirir nuevos. A la hora de trabajar en equipo me siento cómodo, ya que con un equipo se puede llegar a un mejor resultado final.</p>
+          <p className="text-xl"> Debajo encontrarás <span className="text-sky-500">mis redes</span>. Gracias por tomarte el tiempo de leer esto y por tu atención.</p>
+          <div className="flex items-center">
+            <Link href={ "https://github.com/BrianMarchese" } target="_blank">
+              <FaGithub size={33} className="mx-2 hover:text-sky-500 transition-all"/>
+            </Link>
+            <Link href={ "https://www.linkedin.com/in/brian-uriel-marchese/" } target="_blank">
+              <CiLinkedin size={35} className="mx-2 hover:text-sky-500 transition-all"/>
+            </Link>
+            <Link href={ "mailto:brianmarchese@hotmail.com" } target="_blank">
+              <CiMail size={33} className="mx-2 hover:text-sky-500 transition-all"/>
+            </Link>
+          </div>
+          {/* Botones */}
+          <div className="flex space-x-4">
+          <Link href="/CV Brian Uriel Marchese.pdf" download target="_blank">
+          <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Descargar CV
+            </span>
+          </button>
+          </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+
+        {/* Contenedor de la imagen */}
+        <div className="hidden md:block">
+{/*           <Image
+            src="/Foto-removebg-preview.png" // cambia esto al nombre de tu imagen
+            alt="Profile Image"
+            width={300}
+            height={300}
+            className="rounded-full shadow-xl shadow-sky-600 bg-sky-500/70"
+          /> */}
+            <Image
+            src="/Foto.jpg" // cambia esto al nombre de tu imagen
+            alt="Profile Image"
+            width={300}
+            height={300}
+            className="rounded-3xl shadow-xl shadow-sky-600"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </div>
     </div>
   );
 }
