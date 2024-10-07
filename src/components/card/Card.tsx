@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa"; // Ejemplo de íconos
 import { RxArrowTopRight } from "react-icons/rx";
 
 interface Props {
-    image: string
+    src: string
     title: string
     description: string
     technologies: IconType[];
@@ -15,15 +15,15 @@ interface Props {
     liveUrl: string;   // URL del sitio web del proyecto
 }
 
-const Card = ({ image, title, description, technologies, githubUrl, liveUrl }: Props) => {
+const Card = ({ src, title, description, technologies, githubUrl, liveUrl }: Props) => {
   return (
 <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden relative md:max-w-xl flex flex-col bg-transparent shadow-sky-500">
     <div className="overflow-hidden">
         <Image
             width={1920}
             height={1080}
-            src={image}
-            alt={title}
+            src={src}
+            alt={"hola"}
             className="w-full object-cover transform transition duration-300 hover:scale-105 md:h-60"
         />
     </div>
