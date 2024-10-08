@@ -41,7 +41,7 @@ const projects = [
   },
   {
     src: "/cheerss.png",
-    title: "Cheers",
+    title: "Cheer´s",
     description: "Página web para el servicio de barras móviles de coctelería con la opción de venta de paquetes de contratación realizada con JavaScript, estilizada con Bootstrap y SASS.",
     technologies: [IoLogoJavascript, FaBootstrap, FaSass],
     githubUrl: "https://github.com/BrianMarchese/ProyectoFinal--Marchese",

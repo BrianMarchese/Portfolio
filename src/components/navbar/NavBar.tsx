@@ -4,8 +4,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { FiMenu, FiX } from 'react-icons/fi' // Iconos para el menú hamburguesa
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 const NavBar = () => {
+  const pathName = usePathname();
+
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -25,17 +28,17 @@ const NavBar = () => {
         {/* Navegación en pantallas grandes */}
         <ul className="hidden md:flex space-x-8 text-white text-lg">
           <li className="flex items-center">
-            <Link href="/" className='hover:text-sky-500 transition-all'>
+            <Link href="/" className={`hover:text-sky-500 transition-all ${ pathName === "/" ? "text-sky-500" : "text-white" }`}>
               Inicio
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="/proyectos" className='hover:text-sky-500 transition-all'>
+            <Link href="/proyectos" className={`hover:text-sky-500 transition-all ${ pathName === "/proyectos" ? "text-sky-500" : "text-white" }`}>
               Proyectos
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="/educacion" className='hover:text-sky-500 transition-all'>
+            <Link href="/educacion" className={`hover:text-sky-500 transition-all ${ pathName === "/educacion" ? "text-sky-500" : "text-white" }`}>
               Certificados
             </Link>
           </li>
@@ -53,18 +56,18 @@ const NavBar = () => {
       {isOpen && (
         <ul className="md:hidden text-white space-y-4 text-center mt-4 ">
           <li className="flex justify-center items-center">
-            <Link href="/" className="block hover:text-sky-500 transition-all">
+            <Link href="/" className={`block hover:text-sky-500 transition-all ${ pathName === "/" ? "text-sky-500" : "text-white" }`}>
               Inicio
             </Link>
           </li>
           <li className="flex justify-center items-center">
-            <Link href="/proyectos" className="block hover:text-sky-500 transition-all">
+            <Link href="/proyectos" className={`block hover:text-sky-500 transition-all ${ pathName === "/proyectos" ? "text-sky-500" : "text-white" }`}>
               Proyectos
             </Link>
           </li>
           <li className="flex justify-center items-center">
-            <Link href="/educacion" className="block hover:text-sky-500 transition-all">
-              Educación
+            <Link href="/educacion" className={`block hover:text-sky-500 transition-all ${ pathName === "/educacion" ? "text-sky-500" : "text-white" }`}>
+              Certificados
             </Link>
           </li>
         </ul>
