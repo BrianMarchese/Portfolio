@@ -17,7 +17,7 @@ const projects = [
     liveUrl: "https://www.ventisnova.com.ar",
   },
   {
-    src: "/teslo.png",
+    src: "/tesloShop.png",
     title: "Teslo Shop",
     description: "Tienda web realizada en NextJS con la utilización de TypeScript, la integración de PostgresSQL para la base de datos, el uso de NextAuth para la autenticación de los usuarios, Tailwind CSS para los estilos, también el uso de PayPal para los pagos, Cloudinary para el manejo de imágenes en la nube y muchas herramientas más.",
     technologies: [RiNextjsLine, SiTypescript, SiPostgresql],
