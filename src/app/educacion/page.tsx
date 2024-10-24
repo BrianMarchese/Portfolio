@@ -30,6 +30,10 @@ const images = [
     src: "/ciberseguridad.png",
     alt: "certificado ciberseguridad"
   },
+  {
+    src: "/nextjs.png",
+    alt: "certificado Next.js"
+  },
 ]
 
 

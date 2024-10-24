@@ -1,10 +1,11 @@
 import Card from '@/components/card/Card';
 import React from 'react'
 import { FaBootstrap, FaHtml5, FaReact, FaSass } from 'react-icons/fa';
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { IoLogoJavascript } from 'react-icons/io';
 import Footer from '@/components/footer/Footer';
+import { SiPostgresql, SiTypescript } from 'react-icons/si';
 
 const projects = [
   {
@@ -15,14 +16,14 @@ const projects = [
     githubUrl: "https://github.com/BrianMarchese/ventisnova",
     liveUrl: "https://www.ventisnova.com.ar",
   },
-/*   {
-    image: "/teslo.png",
-    title: "Proyecto 2",
-    description: "Página desarrollada para la charla de mentorias y tutorias, creada con React, estilizada con Tailwind CSS y base de datos en Firebase",
-    technologies: [FaReact, FaNodeJs],
-    githubUrl: "https://github.com/BrianMarchese",
-    liveUrl: "https://github.com/BrianMarchese",l
-  }, */
+  {
+    src: "/teslo.png",
+    title: "Teslo Shop",
+    description: "Tienda web realizada en NextJS con la utilización de TypeScript, la integración de PostgresSQL para la base de datos, el uso de NextAuth para la autenticación de los usuarios, Tailwind CSS para los estilos, también el uso de PayPal para los pagos, Cloudinary para el manejo de imágenes en la nube y muchas herramientas más.",
+    technologies: [RiNextjsLine, SiTypescript, SiPostgresql],
+    githubUrl: "https://github.com/BrianMarchese/Teslo-Shop",
+    liveUrl: "https://tienda-bm-teslo-shop.vercel.app/",
+  },
   {
     src: "/landing-page.png",
     title: "Transporte Brian",
