@@ -9,6 +9,14 @@ import { SiPostgresql, SiTypescript } from 'react-icons/si';
 
 const projects = [
   {
+    src: "/taller.png",
+    title: "Taller García Hnos",
+    description: "Sitio web para un taller mecánico donde los usuarios podrán ver los servicios ofrecidos y agendar un turno para la revisión de sus vehículos. Desarrollado con Next.js junto a TypeScript, Firebase para la autenticación y la base de datos. Estilizado con Tailwind CSS para un diseño moderno y ágil.",
+    technologies: [RiNextjsLine, SiTypescript, IoLogoFirebase],
+    githubUrl: "https://github.com/BrianMarchese/Taller-Garcia",
+    liveUrl: "https://taller-garcia.vercel.app/",
+  },
+  {
     src: "/ventis.png",
     title: "VentisNova",
     description: "Página web desarrollada para la capacitación de mentorías y tutorías, creada con React, estilizada con Tailwind CSS y base de datos en Firebase para uso de blog, registro e inicio de sesíon de usuarios.",
