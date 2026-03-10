@@ -6,6 +6,7 @@ import { CiMail } from "react-icons/ci";
 import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 import { motion } from "framer-motion";
+import EducationTimeline from "@/components/lineaTiempo/LineaTiempo";
 
 export default function Home() {
   return (
@@ -65,6 +66,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
+        <EducationTimeline />
       <Footer />
     </div>
   );

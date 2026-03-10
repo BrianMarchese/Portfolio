@@ -6,11 +6,30 @@ import React from 'react'
 
 const images = [
   {
-    src: "/db.png",
-    alt: "certificado introduccion a base de datos",
-    className: "lg:h-[320px]"
+    src: "/titulo-intermedio.png",
+    alt: "certificado intermedio Teclab",
+    /* className: "lg:h-[350px]" */
   },
   {
+    src: "/nextjs.png",
+    alt: "certificado Next.js",
+    className: "md:w-[98%]"
+  },
+  
+  {
+    src: "/ciberseguridad.png",
+    alt: "certificado ciberseguridad"
+  },
+  {
+    src: "/react.png",
+    alt: "certificado react"
+  },
+  {
+    src: "/db.png",
+    alt: "certificado introduccion a base de datos",
+    className: "md:w-[83%]"
+  },
+  /*   {
     src: "/python.png",
     alt: "certificado python"
   },
@@ -22,20 +41,8 @@ const images = [
     src: "/js.png",
     alt: "certificado javascript"
   },
-  {
-    src: "/react.png",
-    alt: "certificado react"
-  },
-  {
-    src: "/ciberseguridad.png",
-    alt: "certificado ciberseguridad"
-  },
-  {
-    src: "/nextjs.png",
-    alt: "certificado Next.js"
-  },
+  */
 ]
-
 
 const EducacionPage = () => {
   return (
