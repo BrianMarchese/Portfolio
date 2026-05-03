@@ -19,7 +19,7 @@ const educationData: EducationItem[] = [
     descripcion: "Formación universitaria enfocada principalmente en los cimientos de la ingeniería de software y las ciencias de la computación."
   },
   {
-    fecha: "2016 - 2021",
+    fecha: "2016 - 2020",
     titulo: "Bachiller en Economía y Administración",
     institucion: "Colegio Nuestra Señora de la Merced"
   }
