@@ -1,13 +1,21 @@
 import Card from '@/components/card/Card';
 import React from 'react'
 import { FaBootstrap, FaHtml5, FaReact, FaSass } from 'react-icons/fa';
-import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsLine, RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { IoLogoJavascript } from 'react-icons/io';
 import Footer from '@/components/footer/Footer';
 import { SiPostgresql, SiTypescript } from 'react-icons/si';
 
 const projects = [
+    {
+    src: "/menu-click.png",
+    title: "Menú Click",
+    description: "Plataforma de menú digital y pedidos online en tiempo real para local de comida. Permite a los usuarios armar su combo y enviar la comanda por WhatsApp, mientras que el local gestiona el stock e imprime los tickets desde un panel privado. Desarrollada con Next.js, TypeScript y Supabase, utilizando Tailwind CSS para una interfaz moderna, ágil y adaptada a celulares.",
+    technologies: [RiNextjsLine, SiTypescript, RiSupabaseFill],
+    githubUrl: "https://github.com/BrianMarchese/Menu-click",
+    liveUrl: "https://menu-click-bm.vercel.app/",
+  },
   {
     src: "/taller.png",
     title: "Taller García Hnos",
